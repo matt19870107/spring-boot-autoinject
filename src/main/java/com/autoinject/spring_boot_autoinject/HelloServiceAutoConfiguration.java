@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @ConditionalOnProperty(prefix="hello",value="enabled", matchIfMissing=true)
 public class HelloServiceAutoConfiguration {
 
+	//When add this object into the method parameter, the object will be autowired automatically
 	@Autowired
 	private HelloServiceProperties helloServiceProperties;
 	
